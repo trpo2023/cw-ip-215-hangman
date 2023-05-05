@@ -1,10 +1,10 @@
 all: main.exe
 
 main.exe: main.o
-	 gcc -o main.exe main.o
+	 g++ -o main.exe main.o
 
-main.o: main.c
-	 gcc -c main.c
+main.o: main.cpp
+	 g++ -c main.cpp
      
 clean:
 	 del main.o main.exe
