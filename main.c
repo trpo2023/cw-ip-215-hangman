@@ -1,14 +1,12 @@
 #include <stdio.h>
-#include <iostream>
 
 int main () {
-    setlocale(LC_ALL, "");
-    printf ("Вас приветствует игра 'Виселица'\n");
-    printf ("Хотите узнать правила игры?  (1/0)");
-    int rules;
-    scanf ("%d", &rules);
-    if (rules == 1) {
-        printf ("Цель игры - угадать скрытое слово, отгадывая по одной букве за раз. Для этого Вы предлагаете букву, которая может входить в слово. Если такая буква есть, она отображается на пустых местах, если нет - рисуется часть виселицы. У вас есть 7 попыток на ошибку. Если количество ошибок превышает допустимое, Вы проигрывали. Если слово угадано, Вы выиграли.");
+    printf ("Dobro pozhalovat` v igru 'Viselitsa'\n");
+    printf ("Hochesh uznat` pravila?  (y/n)");
+    char rules;
+    scanf ("%c", &rules);
+    if (rules == 'y') {
+        printf ("Tsel igry - ugadat' skrytoe slovo, otgadyvaya po odnoi bukve za raz. Dlya etogo igrok predlagaet bukvu, kotoraya mozhet vkhodit' v slovo. Yesli takaya bukva est', ona otrazhaetsya na pustykh mestakh, yesli net - na spetsial'noi doske risuetsya chast' viselitsy. Igrok imeet neskРѕР»СЊРєРѕ popytok na oshibku, v zavisimosti ot vybrannoi slozhnosti igry. Yesli kolichestvo oshibok prevyshaet dopustimoe, igrok proigryvaet. Yesli slovo ugadano, igrok pobezhdaet.");
     }
     return 0;
 }
